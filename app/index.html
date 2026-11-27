@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Beacon — Black Friday 2026 deals, checked today</title>
+<meta name="description" content="Real Black Friday and Cyber Monday deals, each price checked on 27 November 2026 at its store. Search and filter by category, store and discount.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">BLACK FRIDAY · 27 NOV 2026 · CYBER MONDAY 30 NOV</p>
+    <h1>Bargain Beacon</h1>
+    <p class="tagline">Real deals, checked today — not inflated “was” prices. Every price below was read at its store or in a deals source that names the store, on Black Friday itself.</p>
+  </div>
+</header>
+
+<main>
+  <section class="stats" aria-label="Sale overview">
+    <div class="stat"><span class="stat-num" id="stat-deals">–</span><span class="stat-label">deals listed</span></div>
+    <div class="stat"><span class="stat-num" id="stat-stores">–</span><span class="stat-label">stores</span></div>
+    <div class="stat stat-wide"><span class="stat-num stat-small" id="stat-best">–</span><span class="stat-label">top pick</span></div>
+    <div class="stat stat-wide"><span class="stat-num stat-small" id="stat-checked">–</span><span class="stat-label">prices checked</span></div>
+    <p class="store-line" id="store-counts"></p>
+  </section>
+
+  <section class="controls" aria-label="Search and filters">
+    <label class="control control-search">
+      <span>Search deals</span>
+      <input id="search" type="search" placeholder="Try “dyson”, “lego”, “airpods”…">
+    </label>
+    <label class="control">
+      <span>Category</span>
+      <select id="category"></select>
+    </label>
+    <label class="control">
+      <span>Store</span>
+      <select id="store"></select>
+    </label>
+    <label class="control">
+      <span>Minimum discount</span>
+      <select id="discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% off or more</option>
+        <option value="30">30% off or more</option>
+        <option value="40">40% off or more</option>
+        <option value="50">50% off or more</option>
+      </select>
+    </label>
+    <label class="control">
+      <span>Sort by</span>
+      <select id="sort">
+        <option value="verdict">Best deal first</option>
+        <option value="discount">Biggest discount</option>
+        <option value="saved">Most money saved</option>
+        <option value="price-low">Lowest price</option>
+        <option value="price-high">Highest price</option>
+      </select>
+    </label>
+  </section>
+
+  <p class="result-line" id="result-count">Loading deals…</p>
+  <section class="grid" id="deal-grid" aria-live="polite"></section>
+
+  <section class="method">
+    <h2>How to read this page</h2>
+    <ul>
+      <li><strong>Record low</strong> — a source calls it the lowest price ever for that product.</li>
+      <li><strong>Strong deal</strong> — 40% or more off the usual price.</li>
+      <li><strong>Solid deal</strong> — 25–39% off. <strong>Modest saving</strong> — under 25% off, worth it only if you wanted it anyway.</li>
+      <li>Every deal names its store, its sale and usual prices, the discount worked out from those two prices, and the source where the price was read.</li>
+      <li>Prices were checked on Black Friday, 27 November 2026, and can change or sell out — the store link opens the product at that store so you can confirm before buying.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Bargain Beacon — an independent Black Friday deal finder. Not affiliated with Amazon, Best Buy, Walmart, Target or any brand listed. Prices checked 27 Nov 2026, 10:35 UTC.</p>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
